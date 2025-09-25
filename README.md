@@ -4,7 +4,7 @@
 # 🚀 FastAPI Intent Classifier
 
 This project is a **FastAPI-based Intent Classification API** that classifies user queries into predefined intents (e.g., sending email, scheduling calendar events, or performing web searches).
-It uses **Machine Learning models** (TF-IDF + Logistic Regression) trained on both real and synthetic datasets.
+It uses **Machine Learning models** (**TF-IDF + Multinomial Naive Bayes / SVM / Logistic Regression**) trained on both real and synthetic datasets.
 The project is containerized using **Docker** for easy deployment.
 
 ---
@@ -13,35 +13,35 @@ The project is containerized using **Docker** for easy deployment.
 
 ```
 intent_classifier/
-├── main.py                 # FastAPI app entry point
-├── create_dataset.py       # Script to generate synthetic noisy dataset
-├── requirements.txt        # Python dependencies
-├── Dockerfile              # Docker setup for deployment
+│── main.py                # FastAPI app entry point
+│── create_dataset.py       # Script to generate synthetic noisy dataset
+│── requirements.txt        # Python dependencies
+│── Dockerfile              # Docker setup for deployment
 │
 ├── data/
-│   ├── full_dataset.csv        # Complete dataset
-│   ├── train_dataset.csv       # Training split
-│   ├── validation_dataset.csv  # Validation split
-│   └── test_dataset.csv        # Testing split
+│   ├── full_dataset.csv         # Complete dataset
+│   ├── train_dataset.csv        # Training split
+│   ├── validation_dataset.csv   # Validation split
+│   └── test_dataset.csv         # Testing split
 │
 ├── models/
-│   ├── intent_model.pkl        # Trained classification model
-│   ├── tfidf_vectorizer.pkl    # TF-IDF vectorizer
-│   └── label_encoder.pkl       # Encodes class labels
+│   ├── intent_model.pkl         # Trained classification model
+│   ├── tfidf_vectorizer.pkl     # TF-IDF vectorizer
+│   └── label_encoder.pkl        # Encodes class labels
 │
-├── tests/
-│   └── test_main.py            # Unit tests for API
-│
-└── Colab_notebook.ipynb        # ML notebook (optional)
+└── tests/
+    └── test_main.py             # Unit tests for API
+
+collab_notebook.py               # Notebook for training & experimentation
 ```
 
 ---
 
 ## ⚡ Features
 
-* ML pipeline: TF-IDF + Logistic Regression.
+* Train ML models (**Multinomial Naive Bayes, SVM, Logistic Regression**) on intent classification data.
 * REST API built with **FastAPI**.
-* Endpoints for **health, model info, single and batch predictions**.
+* Predict intent from user queries.
 * Includes **unit tests** with `pytest`.
 * Ready for **Docker deployment**.
 
@@ -61,7 +61,7 @@ cd intent_classifier
 ```bash
 python -m venv venv
 venv\Scripts\activate   # On Windows
-source venv/bin/activate   # On Linux/Mac
+source venv/bin/activate  # On Linux/Mac
 ```
 
 ### 3️⃣ Install dependencies
@@ -80,8 +80,13 @@ Start the FastAPI server:
 uvicorn main:app --reload
 ```
 
-Open your browser or Postman at:
-👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) (Swagger UI)
+Open your browser or use Postman at:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+Here you can test the API endpoints with Swagger UI.
 
 ---
 
@@ -90,48 +95,66 @@ Open your browser or Postman at:
 ### 1. Health Check
 
 **GET** `/api/health`
+✅ Verify that the API is running.
 
-* Verify that the API is running.
-  **Response**:
+Response:
 
 ```json
-{"status": "ok"}
+{
+  "status": "ok"
+}
 ```
+
+---
 
 ### 2. Model Info
 
 **GET** `/api/model/info`
+✅ Get details about the trained model.
 
-* Get details about the trained model.
-  **Response**:
+Response:
 
 ```json
 {
   "model": "intent_classifier",
   "version": "1.0",
+  "algorithms": ["MultinomialNB", "SVM", "LogisticRegression"],
   "labels": ["email_send", "calendar_schedule", "web_search"]
 }
 ```
 
+---
+
 ### 3. Classify Single
 
 **POST** `/api/classify`
-**Request Body**:
+✅ Classify intent for a single text input.
+
+Request Body:
 
 ```json
-{"text": "schedule a meeting tomorrow at 5 pm"}
+{
+  "text": "schedule a meeting tomorrow at 5 pm"
+}
 ```
 
-**Response**:
+Response:
 
 ```json
-{"intent": "calendar_schedule", "confidence": 0.87}
+{
+  "intent": "calendar_schedule",
+  "confidence": 0.87
+}
 ```
+
+---
 
 ### 4. Classify Batch
 
 **POST** `/api/classify/batch`
-**Request Body**:
+✅ Classify intents for multiple texts in one request.
+
+Request Body:
 
 ```json
 {
@@ -143,7 +166,7 @@ Open your browser or Postman at:
 }
 ```
 
-**Response**:
+Response:
 
 ```json
 [
@@ -160,17 +183,20 @@ Open your browser or Postman at:
 1️⃣ Build Docker image:
 
 ```bash
-docker build -t intent-classifier-api .
+docker build -t intent-classifier .
 ```
 
 2️⃣ Run container:
 
 ```bash
-docker run -p 8000:8000 intent-classifier-api
+docker run -p 8000:8000 intent-classifier
 ```
 
 Now the API is available at:
-👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+```
+http://127.0.0.1:8000/docs
+```
 
 ---
 
@@ -185,13 +211,8 @@ pytest tests/
 ## 📊 Dataset
 
 * Synthetic dataset generated with `create_dataset.py`.
-* Noise injected intentionally → accuracy ≤ ~80%.
-
-Data splits:
-
-* Train
-* Validation
-* Test
+* Includes **noise injection** to ensure model accuracy remains below ~80%.
+* Data splits: **Train / Validation / Test**.
 
 ---
 

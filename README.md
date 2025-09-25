@@ -40,7 +40,7 @@ intent_classifier/
 
 ## ⚡ Features
 
-- Train ML model on synthetic + real data.  
+- Train ML model on data.  
 - REST API built with **FastAPI**.  
 - Predict intent from user queries.  
 - Includes **unit tests** with `pytest`.  

@@ -88,19 +88,47 @@ http://127.0.0.1:8000/docs
 
 Here you can test the API endpoints with Swagger UI.
 
+
+## 📌 API Endpoints
+
+### 1. Health Check
+
+**GET** `/api/health`
+
+* **Description**: Verify that the API is running.
+* **Response**:
+
+```json
+{
+  "status": "ok"
+}
+```
+
 ---
 
-## 📡 API Endpoints
+### 2. Model Info
 
-### **1. Root**
+**GET** `/api/model/info`
 
-`GET /`
-Returns a welcome message.
+* **Description**: Get details about the trained model.
+* **Response**:
 
-### **2. Predict Intent**
+```json
+{
+  "model": "intent_classifier",
+  "version": "1.0",
+  "labels": ["email_send", "calendar_schedule", "web_search"]
+}
+```
 
-`POST /predict`
-**Request body:**
+---
+
+### 3. Classify Single
+
+**POST** `/api/classify`
+
+* **Description**: Classify intent for a single text input.
+* **Request Body**:
 
 ```json
 {
@@ -108,13 +136,42 @@ Returns a welcome message.
 }
 ```
 
-**Response:**
+* **Response**:
 
 ```json
 {
   "intent": "calendar_schedule",
   "confidence": 0.87
 }
+```
+
+---
+
+### 4. Classify Batch
+
+**POST** `/api/classify/batch`
+
+* **Description**: Classify intents for multiple texts in one request.
+* **Request Body**:
+
+```json
+{
+  "texts": [
+    "send email to HR",
+    "search for AI conferences",
+    "set up a meeting on Friday"
+  ]
+}
+```
+
+* **Response**:
+
+```json
+[
+  {"intent": "email_send", "confidence": 0.91},
+  {"intent": "web_search", "confidence": 0.85},
+  {"intent": "calendar_schedule", "confidence": 0.89}
+]
 ```
 
 ---

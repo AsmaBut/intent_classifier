@@ -1,0 +1,101 @@
+text,intent
+PLEASE CAH you find weather 4ECAST ONLINE,web_search
+Would you mind compose an email to maria concerning report?,email_send
+I need to what's happening.,general_chat
+would u mind what's right up?,general_chat
+Would you right mind tell me abour company travel?,knowledge_query
+Could you i need to email alex about deadline?...,email_send
+Find me details about training?,web_search
+"Hello, i want to send an email to emily regarding deadline",email_send
+"hey, PLEASE book a meeting WITH manager at 11:30AM",calendar_schedule
+"Hello, seardh online for flight status",web_search
+Would you mind plan a meeting wiyh partners on next month at 3pm?,calendar_schedule
+Can you set up a meeting with group right at 3pm?,calendar_schedule
+Can you send an email to Emily about report?,email_send
+plezse how ARE you,general_chat
+I nded to schedulr a meeting with partners on next week.,calendar_schedule
+Can you explain the sick policy??,knowledge_query
+Could ylu what's up?...,general_chat
+Set up a meeting with group at 2:30pm?,calendar_schedule
+Would you mind create a calendar evrnt with partners on today?...,calendar_schedule
+Creste a calebdar event wigh client on tomorrow!!,calendar_schedule
+What's the basically proceds for promotion?,knowledge_query
+How are you DOING today?,general_chat
+"Hey, i need to email john about training",email_send
+Could you how do you feel today???,general_chat
+cab u wat is ouf company's vacation policy?,knowledge_query
+"Hey, tell me something interesting",general_chat
+Can you write an email to maria about training?,email_send
+Whst ARE the GUIDELINES FOR report!,knowledge_query
+"Hey, tell me ABIUT company parental",knowledge_query
+Can you can you explain attendance policy?,knowledge_query
+How do you feel today,general_chat
+how are U.,general_chat
+Hey tell me about company sick,knowledge_query
+Hey can you schedule a meeting with stakeholders for wednesday,calendar_schedule
+Can actually you how's it going,general_chat
+I need to create a calendar event with committee on wednesday.,calendar_schedule
+Please book a uh meeting with cluent for thursday.,calendar_schedule
+i NEED to how are you doing today.,general_chat
+Find basically me details about presentation,web_search
+Would ylu mind tell me about company benefits?,knowledge_query
+I want to explain the parental policy.,knowledge_query
+Can you i need information about professional?,knowledge_query
+"Hello, please email david about review",email_send
+hpw are you.,general_chat
+i want to write an email to david ABOUT deadline,email_send
+draft an email to mike abt workshop!,email_send
+"Hey, i need to email mike about workshop",email_send
+"Hey, i need to email lisa about presentation",email_send
+Could you please email emily about deadline?,email_send
+How do I report an issue?,knowledge_query
+I want to search right for budget...,web_search
+csn u find information anout meeting?,web_search
+"Hey, please book a meeting with stakeholders actually at 1:00pm",calendar_schedule
+Compose an email to Alex concerning traibing!,email_send
+Please i want to send an email to tom regarding project.,email_send
+Compose an you know email to Lisa concerning presentation!,email_send
+"hry, UM TELL me something INTERESTING",general_chat
+"Hello, how's your day going",general_chat
+Would you mind biok a meetong with director for next week?,calendar_schedule
+Search for conference ONLINE!,web_search
+Search onlinw for rdstaurants nearby....,web_search
+I want to i need information about attendance.,knowledge_query
+can U i NEED imformation about travel?,knowledge_query
+Can you compose an email to maria concerning conference?,email_send
+Would you mind search the web for report?,web_search
+woukd YOU mond DRAFT an EMAIL to emily about WORKSHOP?,email_send
+"Hey, tell me how performance review works",knowledge_query
+"I want to book a meeting with board foe today,,,",calendar_schedule
+i need 2 CAH u FIND hotek drals online.,web_search
+Would you mind twll me hiw hiring works?,knowledge_query
+Would you mind can you find sports scotes onpine?,web_search
+Plezse set a meeting wirh committee on wednesday.,calendar_schedule
+can ya create a calendar event with director on today?,calendar_schedule
+Could you can you find hotel deals onlihe?,web_search
+Would you mind how does promotion work?,knowledge_query
+can you send an email tu john about training.,email_send
+Please please email alex about conference.,email_send
+I need to schedule a meeying with team on this afternoon?,calendar_schedule
+Please search thr wrb you know for meeting.,web_search
+Please what is our company's attendance policy.,knowledge_query
+Wluld you mind WHAT'S up!,general_chat
+Could you what are the guidelines for project,knowledge_query
+Can YOU well find rewtaurants nearby onoine.,web_search
+Can you EXPLAIN the benefits POLICY?,knowledge_query
+Please can you send an email to sarah about review.,email_send
+I want to what's happeming.,general_chat
+"hey, hlw do you actually feel 2day..",general_chat
+Hey look up news headlines ON THE YOU know web,web_search
+please set UP A meeting wigh dieector at 10AM.,calendar_schedule
+Could you add a meeting with bosrd to my calebdar for wednesday?,calendar_schedule
+could YOU LOOK UM up information ABT project,web_search
+How's um your day goung,general_chat
+I wqnt to search the wrb for budget,web_search
+What's the WEATHER LIKE IN new York!...,web_search
+look up restaurants nearby well on teh web.,web_search
+I want to how are you uh doing today.,general_chat
+Can like you search online for news headlines?,web_search
+How is everything!,general_chat
+Create a calendar event with group on next month!,calendar_schedule
+"Please please book a meeting with board at 9:00am,",calendar_schedule

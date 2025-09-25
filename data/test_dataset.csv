@@ -1,0 +1,101 @@
+text,intent
+could YOU set up a meeting with manager AT 5:45pm?,calendar_schedule
+"Hey, basically how's it going",general_chat
+Can you i need information about expense?,knowledge_query
+Hello please book a meeting with committee at 1:00pm,calendar_schedule
+"Hey, how's it going!!",general_chat
+cpuld YOU LOOK up news headlines ON the WEN,web_search
+Draft an email to Mike about review.,email_send
+Coukd you can you find sgock prices online?,web_search
+"Hey, send a mesaage to david via emsil about budget??",email_send
+Helpo what's new,general_chat
+I wany to what ard the guidelinew fpr conference.,knowledge_query
+I WANT to LOOK UP SPORTS scores ON the web,web_search
+I want to can you schedule a meeting with uh director for today.,calendar_schedule
+I need to what is our company's sick policy.,knowledge_query
+"Hey, cah you find hotel deals onlinr",web_search
+I want to what is our company's professional policy.,knowledge_query
+Cqn you i want to srarch fof report?,web_search
+I need to tell me how performance review works.,knowledge_query
+I need to i need to email john about project.,email_send
+I want to schedule a meeting with partners on this afternoon at 10am.,calendar_schedule
+Hey how is EVERYGHING??,general_chat
+Would you mind draft an email to mike about budget?,email_send
+I need to schedule a meeting with group on this afternoon,calendar_schedule
+Would you mind whar's the weather like in tokyo?,web_search
+Could you book a meeting with group for next month?,calendar_schedule
+I nwed to how's your day going,general_chat
+Pleqse plan a meeting with committee on this afternoon at 10:30am.,calendar_schedule
+Hey pleasr book a meeting with group at 4pm,calendar_schedule
+"Hello, book a meeting with manager for thursday",calendar_schedule
+Could you what's the weather like in london?,web_search
+What's the process for expense reporting??,knowledge_query
+Can YOU email MARIA regarding workshop,email_send
+i need to how's yar dsy going.,general_chat
+I NEED 2 how DO i schedule a meeting.,knowledge_query
+Schedule a so meeting with team on Friday at 3:15pm,calendar_schedule
+Can ylu HOW IS everything?,general_chat
+I need to search the wrb for deadline,web_search
+"Hello, what's new",general_chat
+"Hey, how is everything",general_chat
+Please what is our company's attendance policy.,knowledge_query
+I WANT to LOPK up INFORMATION about meeting.,web_search
+I need to email Tom about uh conference,email_send
+Plan a meeting with partners on today at 10am...,calendar_schedule
+could ya i need to schedule a meeting woth director on wednesday?,calendar_schedule
+"Hello, how are you",general_chat
+I need to email John about review!,email_send
+Could you send a message to david via email about workshop?,email_send
+Would YOU mind TELL me HOW time off works!,knowledge_query
+search da web for uh review.,web_search
+I need to how is everything.,general_chat
+Can you i want to send an email to alex regarding budget?,email_send
+Could you what's the process for performance review?,knowledge_query
+Hey um search online for stock prices,web_search
+Could you i need information about benefits?,knowledge_query
+I wang to swnd an email to john about conference.,email_send
+Can you please email david about conference?,email_send
+How's it going?,general_chat
+I want to how do i update my profile.,knowledge_query
+Can you book a meeting with director for this afternoon?,calendar_schedule
+Can YOU whag's basically NEW?,general_chat
+"Hello, what's new...",general_chat
+plz email maria about training?,email_send
+Could you what is our company's attendance policy?,knowledge_query
+i want tu i WANT TU search for conference.,web_search
+i need tu tell me somethihg interesting.,general_chat
+search RIGHT onlime fr flight STATUS.,web_search
+Can you how do you feel today???,general_chat
+Hey explain the benefits policy,knowledge_query
+WOULD u mind can u send AN email TO mike ABOUT workshop?,email_send
+I WSNT TO ADD A meeting with director to my CALENDAR flr NEXT MONTH.,calendar_schedule
+please set UP a meeting with director AT 2:30pm.,calendar_schedule
+Seatch the wrb for DEADLONE.,web_search
+"Hey, i need information about professional??",knowledge_query
+I want to what are the guidelines for review.,knowledge_query
+"Hey, how does performance review work",knowledge_query
+i need to draft an email to tom bout budget.??,email_send
+can yiu search the web fr well project!!!,web_search
+"Hello, find information about report",web_search
+Can you WHAT are the GUIDELINES FOR REPORT?,knowledge_query
+Can you can you send an email to maria about presentation?,email_send
+fimd me DETAILS ABOUT prewentation!,web_search
+could u like what's ndw!!!,general_chat
+"Hello, HOW do you FDEL TODAY",general_chat
+Would you mind i need to email mike about budget?,email_send
+Would you mind write an email to emily anout budget?,email_send
+Can you send an email to Tom about review!,email_send
+Look UP INFORMATION about RIGHT CONFERENCE.,web_search
+can you tell ME something interesring?,general_chat
+I need to what's the process for travel request.,knowledge_query
+"Hello, seqrch the web for workshop",web_search
+I need to um search the web for conference,web_search
+please book a MEETING WITH MANAGER AT 11:30am?,calendar_schedule
+What are the guidelines for presentation!,knowledge_query
+"I want to please book a meeting with manager at 5:45pm,",calendar_schedule
+I need uh to schedule a meeting with team on Friday,calendar_schedule
+Schedule a meeting with team on next week at 4pm!,calendar_schedule
+i need to WHAT'D UP,general_chat
+Could you email david regarding training?,email_send
+"Hello, set a meeting wkth clienr on next month",calendar_schedule
+"Hey, write an email to david about presentation",email_send
